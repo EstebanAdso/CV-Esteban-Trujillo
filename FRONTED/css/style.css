@@ -52,13 +52,30 @@ body{
     background: url();
     display: flex;
     align-items: center;
+    text-align: center;
+    width: 100%;
     padding: 0 10%;
     
 }
 
 .home-content{
-    max-width: 700px;
+    /* max-width: 700px; */
+    width: 100%;
 
+}
+
+.home-content .img{
+   height: auto;
+   overflow: hidden;
+}
+
+.home-content img{
+    max-width: 60%;
+    min-width: 500px;
+    max-height: 500px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-position: left;
 }
 
 .home-content h1{
@@ -75,29 +92,24 @@ body{
 
 .home-content p{
     font-size: 16px;
-    margin: 20px 0 40px
+
+    width: 50%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .home-content .btn-box{
     display: flex;
-    justify-content: space-between;
-    width: 345px;
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
     height: 50px;
 
 }
 
-.home-img{
-    width: 850px;
-    display: none;
-    
-}
-.home-img img{ 
-    width: 100%;
-    height: auto;
-    border-top-left-radius: 20%;
-    opacity: 0.7;
-   
-}
+
+
 
 
 .btn-box a{
@@ -209,10 +221,11 @@ h2{
 }
 
 .experiencia_content{
-    background-color: #ededed;
+    background-color: #ddd9d9;
     height: 30dvh;
     width: 70%;
     margin: auto; 
+    border-radius: 10px;
 }
 
 .experiencias{
@@ -220,8 +233,7 @@ h2{
     height: 100%;
     float: left;
     color: #444;
-    border-right: 1px solid black;
-    border-bottom: 1px solid black;
+   
 }
 .experiencias h3{
     font-size: 2em;
@@ -252,7 +264,7 @@ h2{
     background-size: contain;
     margin: auto;
     padding: 20px;
-    border-bottom: 1px solid black;
+    
     background-position: center;
     
 }
@@ -275,7 +287,7 @@ h2{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     overflow: hidden;
-    background-color: #ededed;
+    background-color: #ddd9d9;
     padding: 20px;
     opacity: 0; /* Inicialmente invisible para la animación */
     transform: translateY(20px); /* Desplaza hacia abajo para la animación */
@@ -364,3 +376,5 @@ footer a{
 footer a:hover{
     color: rgb(55, 117, 117);
 }
+
+
