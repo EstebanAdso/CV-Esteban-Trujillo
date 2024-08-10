@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/proyectos.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    
+
 </head>
 
 <body>
+    <div id="particles-js"></div>
     <!--Vista numero 1-->
     <header class="header">
         <a href="#" class="logo">Esteban.</a>
@@ -25,32 +26,40 @@
         </nav>
     </header>
 
-    <section class="home">
+    <div class="home">
         <div class="home-content">
             <div class="img">
                 <img src="img/perfil4.jpeg" alt="Foto Personal">
             </div>
             <h1>Carlos Esteban Trujillo Paz</h1>
             <h3>Analista y Desarrollador de Software</h3>
-            <p>Soy apacionado por la tegnologia, me gusta estar actualizado de nuevas tegnologias y aprender un poco cada dia,
-               soy Tegnologo en Analisis y Desarrollo de Software con experiencia en Base de datos, JavaScript, NodeJs, Java y mucho mas. 
+            <p>Soy apacionado por la tegnologia, me gusta estar actualizado de nuevas tegnologias y aprender un poco
+                cada dia,
+                soy Tegnologo en Analisis y Desarrollo de Software con experiencia en Base de datos, JavaScript, NodeJs,
+                Java y mucho más.
             </p>
             <div class="btn-box">
                 <a href="#">Hire Me</a>
-                <a href="#">lets talk</a>
+                <a href="#">Let's Talk</a>
+            </div>
+
+            <div class="next-page">
+                <a href="#experiencia"><i class='bx bxs-hand-down'></i></i></a>
             </div>
         </div>
-        
         <div class="home-sci">
             <a href="#"><i class='bx bxl-github'></i></a>
-            <a href="#"><i class='bx bxl-linkedin' ></i></a>
-            <a href="#"><i class='bx bxl-whatsapp' ></i></a>
-            <a href=""><i class='bx bxl-gmail' ></i></a>
+            <a href="#"><i class='bx bxl-linkedin'></i></a>
+            <a href="#"><i class='bx bxl-whatsapp'></i></a>
+            <a href="#"><i class='bx bxl-gmail'></i></a>
         </div>
-    </section>
+    </div>
+
     
+
+
     <!--Vista Numero 2-->
-    <section class="experiencia">
+    <div class="experiencia" id="experiencia">
         <h2>Experiencia Profesional.</h2>
         <div class="experiencia_content">
             <div class="experiencias">
@@ -58,39 +67,42 @@
                 <ul>
                     <li>Tiempo en la empresa : (6 meses) 2024-05-15 to 2024-15-12</li>
                     <li>Cargo en la empresa: aprendiz DBA</li>
-                    <li>habilidades adquiridas: Manejo de base de datos Sql y NoSql como de igual manera, despliegue y optimizacion de datos.</li>
-                    <li>Detalle del trabajo : Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero error pariatur corrupti mollitia dolor. Reprehenderit voluptatum modi odio, optio aperiam in repellat nulla quia, tempora animi deleniti omnis, officiis aspernatur!</li>
+                    <li>habilidades adquiridas: Manejo de base de datos Sql y NoSql como de igual manera, despliegue y
+                        optimizacion de datos.</li>
+                    <li>Detalle del trabajo : Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero error
+                        pariatur corrupti mollitia dolor. Reprehenderit voluptatum modi odio, optio aperiam in repellat
+                        nulla quia, tempora animi deleniti omnis, officiis aspernatur!</li>
                 </ul>
             </div>
             <div class="logo_experiencia"></div>
         </div>
-    </section>
+    </div>
 
-    
+
     <!--Vista Numero 3-->
     <section class="card-container" ">
         <h2>Proyectos Personales</h2>
-        <div class="card">
-            <div class="card-img">
-                <img src="../img/proyect1.png" alt="">
-            </div>
+        <div class=" card">
+        <div class="card-img">
+            <img src="img/proyect1.png" alt="">
+        </div>
 
-            <div class="card-content">
-                <h3>Pagina Web Monaco Shoes</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum at et ratione eum distinctio sit
-                    non magni nesciunt ex blanditiis odio, facere, totam obcaecati praesentium hic autem unde officiis
-                    aliquid.</p>
+        <div class="card-content">
+            <h3>Pagina Web Monaco Shoes</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum at et ratione eum distinctio sit
+                non magni nesciunt ex blanditiis odio, facere, totam obcaecati praesentium hic autem unde officiis
+                aliquid.</p>
 
-                <div class="btn-box">
-                    <a href="#">Hire Me</a>
-                    <a href="#">lets talk</a>
-                </div>
+            <div class="btn-box">
+                <a href="#">Hire Me</a>
+                <a href="#">lets talk</a>
             </div>
+        </div>
         </div>
 
         <div class="card">
             <div class="card-img">
-                <img src="../img/proyect2.png" alt="">
+                <img src="img/proyect2.png" alt="">
             </div>
 
             <div class="card-content">
@@ -108,7 +120,7 @@
 
         <div class="card">
             <div class="card-img">
-                <img src="../img/proyect1.png" alt="">
+                <img src="img/proyect1.png" alt="">
             </div>
 
             <div class="card-content">
@@ -125,7 +137,7 @@
         </div>
         <div class="card">
             <div class="card-img">
-                <img src="../img/proyect1.png" alt="">
+                <img src="img/proyect1.png" alt="">
             </div>
 
             <div class="card-content">
@@ -163,12 +175,18 @@
 
 
     <footer>
-       
+
         <a href="">Git-Hub</a>
         <a href="">WhatSapp</a>
         <a href="">Correo Electronico</a>
         <a href="">descargar hoja de vida</a>
     </footer>
+
+    
+    
+  
+	<script src="js/particles.min.js"></script>
+    <script src="js/particle.js"></script>
 </body>
 
 </html>
