@@ -309,6 +309,37 @@ h2{
     
 }
 
+/*SKILLS*/
+
+.skills{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 15px;
+    height: 300px;
+    margin-top: 40px;
+}
+    
+
+.parent div img{
+    width: 100px; 
+}
+
+
+
+
+
+
+
+        
 
 /*Vista 3*/
 .card-container {
@@ -418,4 +449,23 @@ footer a:hover{
 }
 
 
- 
+/*Estilo para boton */
+@keyframes grow-twice {
+    0%, 100% {
+        transform: scale(1);
+        color: #00abf0;
+    }
+    20%, 60% {
+        transform: scale(1.2);
+        color: #c0e8f5;
+    }
+    40%, 80% {
+        transform: scale(1);
+        color: #00abf0;
+    }
+}
+
+.link-grow-twice {
+    display: inline-block;
+    animation: grow-twice 0.8s ease-in-out;
+}
