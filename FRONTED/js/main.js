@@ -1,7 +1,5 @@
-
 // Selecciona el enlace
 const link = document.querySelector('#btn-down'); // Cambia el selector según sea necesario
-
 
 // Función para activar la animación
 function triggerAnimation() {
@@ -15,3 +13,23 @@ function triggerAnimation() {
 
 // Ejecutar la animación cada 10 segundos
 setInterval(triggerAnimation, 10000);
+
+
+const modal = document.querySelector('.dialog');
+const abrirModal = document.querySelector('#abrirContacto');
+const cerrarModal = document.querySelector('#cerrar');
+const overlay = document.getElementById('modalOverlay');
+
+function openModal() {
+    modal.style.display = 'block';
+    overlay.style.display = 'block';
+}
+
+// Función para cerrar el modal
+function closeModal() {
+    modal.style.display = 'none';
+    overlay.style.display = 'none';
+}
+
+abrirModal.addEventListener('click', openModal)
+cerrarModal.addEventListener('click',closeModal)

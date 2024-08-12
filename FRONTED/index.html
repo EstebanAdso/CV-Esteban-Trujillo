@@ -12,17 +12,43 @@
 </head>
 
 <body>
+    <div class="modal-overlay" id="modalOverlay"></div>
+    <div class="dialog">
+        <div class="dialog-content">
+            <div class="dialog-redes">
+                <a href="#"><i class='bx bxl-linkedin'></i></a>
+                <a href="#"><i class='bx bxl-whatsapp'></i></a>
+                <a href="#"><i class='bx bxl-gmail'><h6>esteban10262728@gmail.com</h6></i></a>
+                <a href="#"><i class='bx bxs-phone-call'><h6>3187967822</h6></i></a>
+            </div>
+        </div>
+        <hr>
+
+        <h3>Puedes Mandarme un mensaje por Aqui!.</h3>
+        <form action="">
+            <label for="nombre">Nombre</label>
+            <input type="text" placeholder="Jhon Doe" id="nombre">
+            <label for="correo">Correo Electronico</label>
+            <input type="text" name="correo" id="correo" placeholder="JhonDoe@correo.com">
+            <label for="asunto">Asunto</label>
+            <textarea name="asunto" id="asunto" placeholder="Erase una vez un joven programador que buscaba un empleo..."></textarea>
+            <button id="enviar">Enviar</button>
+            <button id="cerrar">X</button>
+        </form>
+    </div>
     <div id="particles-js"></div>
     <!--Vista numero 1-->
     <header class="header">
         <a href="#" class="logo">Esteban.</a>
-
         <nav class="navbar">
             <a href="#" class="active">Inicio</a>
             <a href="#">Descargar CV</a>
             <a href="#">Contacto</a>
         </nav>
     </header>
+
+ 
+    
 
     <div class="home">
         <div class="home-content">
@@ -37,8 +63,8 @@
                 Java y mucho más.
             </p>
             <div class="btn-box">
-                <a href="#">Hire Me</a>
-                <a href="#">Let's Talk</a>
+                <a href="#">Descargar CV</a>
+                <a href="#" id="abrirContacto">Contacto</a>
             </div>
 
             <div class="next-page">
@@ -53,28 +79,63 @@
         </div>
     </div>
 
-    
 
-
-    <!--Vista Numero 2-->
     <div class="experiencia" id="experiencia">
-        <h2>Experiencia Profesional.</h2>
-        <div class="experiencia_content">
-            <div class="experiencias">
-                <h3>Practica Empresarial Sena</h3>
+        <h2>Experiencia Profesional</h2>
+        <div class="experiencia-content">
+            <div class="div1">
+                <h2>Práctica Sena DBA</h2>
                 <ul>
-                    <li>Tiempo en la empresa : (6 meses) 2024-05-15 to 2024-15-12</li>
-                    <li>Cargo en la empresa: aprendiz DBA</li>
-                    <li>habilidades adquiridas: Manejo de base de datos Sql y NoSql como de igual manera, despliegue y
-                        optimizacion de datos.</li>
-                    <li>Detalle del trabajo : Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero error
-                        pariatur corrupti mollitia dolor. Reprehenderit voluptatum modi odio, optio aperiam in repellat
-                        nulla quia, tempora animi deleniti omnis, officiis aspernatur!</li>
+                    <li><strong>Empresa:</strong> GSE</li>
+                    <li><strong>Puesto:</strong> Aprendiz DBA</li>
+                    <li><strong>Ubicación de la empresa:</strong> Bogotá</li>
+                    <li><strong>Fecha de Inicio y Fin:</strong> enero 2012 - marzo 2014</li>
+                    <li><strong>Descripción de tareas:</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia reprehenderit fugit libero vero omnis optio tenetur corrupti.</li>
+                    <li><strong>Habilidades adquiridas:</strong> Manejo de bases de datos.</li>
                 </ul>
+                <img src="img/gse.png" alt="Logo de GSE">
             </div>
-            <div class="logo_experiencia"></div>
+            
+            <div class="div2">
+                <h2>Tecnico de Computadoras</h2>
+                <ul>
+                    <li><strong>Empresa:</strong> CompuServicesSoft</li>
+                    <li><strong>Puesto:</strong> Servicio tecnico de celulares y Computadoras</li>
+                    <li><strong>Ubicación de la empresa:</strong> Pasto.</li>
+                    <li><strong>Fecha de Inicio y Fin:</strong> enero 2012 - marzo 2014</li>
+                    <li><strong>Descripción de tareas:</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia reprehenderit fugit libero vero omnis optio tenetur corrupti.</li>
+                    <li><strong>Habilidades adquiridas:</strong> Instalacion de Sistemas, mantenimiento de equipos y servicio al cliente.</li>
+                </ul>
+                <img src="img/proyectos/pc.jpg" alt="Logo de GSE">
+            </div>
+            <div class="div3">
+                <h2>About Me</h2>
+                <pre>
+{
+    "nombre" : "Carlos Esteban Trujillo Paz",
+    "puestos" :"Analista y Desarrollador de software",
+    "Ubicacion":{
+        "ciudad": "Pasto",
+        "departamento" :" Nariño"
+    },
+    "Certificaciones" :[
+        "Tegnologo en Analisis y desarrollo de software (SENA)",
+        "Máster Completo en Java 2024 127 horas(Udemy)","Máster en SQL Server 
+        2024 16 horas (UDEMY)",
+        "Ingles Conversacinal (Lecci)"],
+    "Edad" : 22,
+    "Lenguajes" : ["Español", "Ingles Conversacional"],
+    "Tegnologias": ["Java","JavaScript","Html","Css"
+    ,"github","MySQL","SQLServer","MongoDB","NodeJs","SpringBoot","Python"],
+    "Valores":["Respeto","Puntual","Creatividad","Amable"
+    ,"Solidario","Autonomo","Eficiente","Adaptabilidad"]
+}
+                </pre>
+            </div>            
         </div>
     </div>
+
+
 
     <div class="skills">
         <h2>My Skills</h2>
@@ -132,75 +193,82 @@
                 <h3>CompuServicesSoft</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto officia adipisci dicta rerum possimus ducimus quo laborum consequuntur quos alias delectus, officiis saepe voluptatum asperiores tempora labore, cupiditate eum eligendi!</p>
                 <ul>
-                    <li>html</li>
-                    <li>css</li>
-                    <li>JavaScript</li>
+                    <li class="html">html</li>
+                    <li class="css">css</li>
+                    <li class="js">JavaScript</li>
                 </ul>
             </div>
             <div class="div2">
                 <div class="proyectos_img" style="background-image: url(img/proyectos/monachoshoes.png);">
                 </div>
-                <h3>CompuServicesSoft</h3>
+                <h3>Monaco Shoes</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto officia adipisci dicta rerum possimus ducimus quo laborum consequuntur quos alias delectus, officiis saepe voluptatum asperiores tempora labore, cupiditate eum eligendi!</p>
                 <ul>
-                    <li>html</li>
-                    <li>css</li>
-                    <li>JavaScript</li>
+                    <li class="html">html</li>
+                    <li class="css">css</li>
+                    <li class="js">JavaScript</li>
+                    <li class="java">Java</li>
+                    <li class="ms">MySql</li>
                 </ul>
             </div>
             <div class="div3">
                 <div class="proyectos_img" style="background-image: url(img/proyectos/sqlserver.png);">
                 </div>
-                <h3>CompuServicesSoft</h3>
+                <h3>Scraping SQL Server</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto officia adipisci dicta rerum possimus ducimus quo laborum consequuntur quos alias delectus, officiis saepe voluptatum asperiores tempora labore, cupiditate eum eligendi!</p>
                 <ul>
-                    <li>html</li>
-                    <li>css</li>
-                    <li>JavaScript</li>
+                    <li class="nj">NodeJS</li>
+                    <li class="ss">SqlServer</li>
+                    <li class="js">JavaScript</li>
+                    <li class="html">Html</li>
+                    <li class="css">css</li>
                 </ul>
             </div>
             <div class="div4">
-                <div class="proyectos_img" style="background-image: url(img/proyectos/compuservices.png);">
+                <div class="proyectos_img" style="background-image: url(img/proyectos/cv.png);">
                 </div>
-                <h3>CompuServicesSoft</h3>
+                <h3>CV Esteban Trujillo.</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto officia adipisci dicta rerum possimus ducimus quo laborum consequuntur quos alias delectus, officiis saepe voluptatum asperiores tempora labore, cupiditate eum eligendi!</p>
                 <ul>
-                    <li>html</li>
-                    <li>css</li>
-                    <li>JavaScript</li>
+                    <li class="html">html</li>
+                    <li class="css">css</li>
+                    <li class="js">JavaScript</li>
                 </ul>
             </div>
             <div class="div5">
-                <div class="proyectos_img" style="background-image: url(img/proyectos/compuservices.png);">
+                <div class="proyectos_img" style="background-image: url(img/proyectos/chatbot.png);">
                 </div>
-                <h3>CompuServicesSoft</h3>
+                <h3>chatbot de WhatSapp</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto officia adipisci dicta rerum possimus ducimus quo laborum consequuntur quos alias delectus, officiis saepe voluptatum asperiores tempora labore, cupiditate eum eligendi!</p>
                 <ul>
-                    <li>html</li>
-                    <li>css</li>
-                    <li>JavaScript</li>
+                    <li class="nj">NodeJS</li>
+                    <li class="js">JavaScript</li>
                 </ul>
             </div>
             <div class="div6">
-                <div class="proyectos_img" style="background-image: url(img/proyectos/compuservices.png);">
+                <div class="proyectos_img" style="background-image: url(img/proyectos/facturacion.png);">
                 </div>
-                <h3>CompuServicesSoft</h3>
+                <h3>Facturacion</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto officia adipisci dicta rerum possimus ducimus quo laborum consequuntur quos alias delectus, officiis saepe voluptatum asperiores tempora labore, cupiditate eum eligendi!</p>
                 <ul>
-                    <li>html</li>
-                    <li>css</li>
-                    <li>JavaScript</li>
+                    <li class="html">html</li>
+                    <li class="css">css</li>
+                    <li class="js">JavaScript</li>
+                    <li class="java">Java</li>
+                    <li class="ms">mysql</li>
                 </ul>
             </div>
             <div class="div7">
-                <div class="proyectos_img" style="background-image: url(img/proyectos/compuservices.png);">
+                <div class="proyectos_img" style="background-image: url(img/proyectos/inventario.png);">
                 </div>
-                <h3>CompuServicesSoft</h3>
+                <h3>Inventario de Productos.</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto officia adipisci dicta rerum possimus ducimus quo laborum consequuntur quos alias delectus, officiis saepe voluptatum asperiores tempora labore, cupiditate eum eligendi!</p>
                 <ul>
-                    <li>html</li>
-                    <li>css</li>
-                    <li>JavaScript</li>
+                    <li class="html">html</li>
+                    <li class="css">css</li>
+                    <li class="js">JavaScript</li>
+                    <li class="java">Java</li>
+                    <li class="ms">mysql</li>
                 </ul>
             </div>
             <div class="div8">
@@ -209,9 +277,9 @@
                 <h3>CompuServicesSoft</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto officia adipisci dicta rerum possimus ducimus quo laborum consequuntur quos alias delectus, officiis saepe voluptatum asperiores tempora labore, cupiditate eum eligendi!</p>
                 <ul>
-                    <li>html</li>
-                    <li>css</li>
-                    <li>JavaScript</li>
+                    <li class="html">html</li>
+                    <li class="css">css</li>
+                    <li class="js">JavaScript</li>
                 </ul>
             </div>
             <div class="div9">
@@ -220,9 +288,9 @@
                 <h3>CompuServicesSoft</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto officia adipisci dicta rerum possimus ducimus quo laborum consequuntur quos alias delectus, officiis saepe voluptatum asperiores tempora labore, cupiditate eum eligendi!</p>
                 <ul>
-                    <li>html</li>
-                    <li>css</li>
-                    <li>JavaScript</li>
+                    <li class="html">html</li>
+                    <li class="css">css</li>
+                    <li class="js">JavaScript</li>
                 </ul>
             </div>
         </div>    

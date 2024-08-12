@@ -1,0 +1,15 @@
+{
+    "nombre" : "Carlos Esteban Trujillo Paz",
+    "puestos" :"Analista y Desarrollador de software",
+    "Ubicacion":{
+        "ciudad": "Pasto",
+        "departamento" :" Nariño"
+    },
+    "Certificaciones" :["Tegnologo en Analisis y desarrollo de software (SENA)"
+                        ,"Máster Completo en Java 2024 127 horas(Udemy)","Máster en SQL Server 2024 16 horas (UDEMY)",
+                        "Ingles Conversacinal (Lecci)"],
+    "Edad" : 22,
+    "Lenguajes" : ["Español", "Ingles Conversacional"],
+    "Tegnologias": ["Java","JavaScript","Html","Css","github","MySQL","SQLServer","MongoDB","NodeJs","SpringBoot","Python"],
+    "Valores":["Respeto","Puntual","Creatividad","Amable","Solidario","Autonomo","Eficiente","Adaptabilidad"]
+}

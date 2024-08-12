@@ -16,6 +16,140 @@ body{
     z-index: -10;
 }
 
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 900;
+}
+
+.dialog{
+    width: 50%;
+    max-width: 1200px;
+    height: 60dvh;
+    background-color: white;
+    position: fixed;
+    z-index: 20;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 30px;
+    display:none;
+    z-index: 1000;
+}
+.dialog-content{
+    width: 100%;
+    background-color: #00abf0;
+    padding-top: 1px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+}
+.dialog-content a{
+    color: white;
+    user-select: all;
+}
+.dialog-redes{
+    display: flex;
+    font-size: 2em;
+    justify-content: space-around;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 30px; 
+
+}
+.dialog h3{
+    color: #00abf0;
+    font-size: 2em;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.dialog-redes h6{
+    display: inline;
+    margin-bottom: 50px;
+}
+
+.dialog form{
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+.dialog form label{
+    display: flex;
+    color: black;
+    justify-content: center;
+    font-size: 1.3em;
+}
+
+.dialog form input, .dialog form textarea{
+    display: flex;
+    margin: auto;
+    width: 80%;
+    max-width: 900px;
+    height: 40px;
+    font-size: 1.3em;
+}
+
+.dialog form textarea{
+    max-height: 250px;
+    min-height: 240px;
+    width: 80%;
+    max-width: 900px;
+    
+}
+
+.dialog #enviar{
+    display: flex;
+    margin: auto;
+    margin-top: 50px;
+    font-size: 1.3em;
+    padding: 20px 35px;
+    border-radius: 20px;
+    letter-spacing: 2px;
+    background-color: #00abf0;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.dialog #enviar:hover{
+    background-color: #c0e8f5;
+    color: black;
+ }
+ 
+
+.dialog #cerrar{
+    font-size: 1.3em;
+    padding: 3px 15px;
+    letter-spacing: 1px;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-top-right-radius: 30px;
+    border-color: black;
+    border-top-color: transparent;
+    border-right-color: transparent;
+}
+.dialog #cerrar:hover{
+   background-color: red;
+   color: white;
+   cursor: pointer;
+}
+
+
+
 
 .header{
     position: fixed;
@@ -102,6 +236,7 @@ body{
     margin: auto;
     margin-top: 20px;
     margin-bottom: 20px;
+    max-width: 1200px;
 }
 
 
@@ -121,6 +256,7 @@ body{
     top: 0;
     left: 0;
     pointer-events: auto;
+    z-index: 0;
   }
   
   .home {
@@ -174,7 +310,7 @@ body{
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 150px;
+    width: 220px;
     height: 100%;
     background: #00abf0;
     border: 2px solid #00abf0;
@@ -267,68 +403,82 @@ body{
 .home-sci a:hover::before{
     width: 100%;
 }
-
-/*Experiencia*/
-.experiencia{
-    text-align: center;
-    align-items: center; 
-    z-index: 30;
-}
-
 h2{
-    font-size: 3em;
+    font-size: 2.5em;
+    text-align: center;
 }
 
-.experiencia_content{
-    background-color: #ddd9d9;
-    height: 30dvh;
-    width: 70%;
-    margin: auto; 
-    border-radius: 10px;
-    z-index: 30;
+/*EXPERIENCIA*/
+
+.experiencia {
+    width: 80%;
+    padding: 20px;
+    margin: auto;
+    max-width: 2400px;
 }
 
-.experiencias{
-    width: 70%;
-    height: 100%;
-    float: left;
-    color: #444;
-    z-index: 100;
-   
-}
-.experiencias h3{
-    font-size: 2em;
-    align-items: center;
-    text-align: left;
-    margin-left: 20px;
-    margin-top: 40px;
+.experiencia-content {
+    display: flex;
+    gap: 8px;
     
 }
 
-.experiencia ul{
-    margin: auto;
-    align-items: center;
+.experiencia-content h2 {
+    color: black;
+    margin-bottom: 10px;
+    font-size: 1.8em;
+}
+
+.experiencia-content > div {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    height: 700px;
+    color: black;
+    overflow: hidden;
+    border-radius: 10px;
+    
+}
+
+.experiencia-content .div1,
+.experiencia-content .div2,
+.experiencia-content .div3 {
+    flex: 1;
+    min-width: 200px; /* Ajusta el tamaño mínimo según tu diseño */
+}
+
+.experiencia-content .div3 h2{
+    color: #00abf0;
+}
+
+.experiencia-content ul li{
     list-style: none;
     text-align: left;
-    margin-left: 30px;
-    font-size: 18px;
-    text-wrap: pretty;
-    padding: 30px;
 }
 
-.logo_experiencia{
-    width: 30%;
-    height: 100%;
-    background-image: url(../img/Logo_GSE.png);
-    float: right;
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin: auto;
-    padding: 20px;
-    
-    background-position: center;
-    
+.experiencia-content img{
+    width: 60%;
+    max-width: 380px;
 }
+
+
+.experiencia-content pre{
+    text-align: left;
+}
+@media (max-width: 768px) {
+    .experiencia-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .experiencia-content > div {
+        width: 100%;
+    }
+}
+
+
+
+        
 
 /*SKILLS*/
 
@@ -338,6 +488,7 @@ h2{
     text-align: center;
     align-items: center;
     margin-top: 50px;
+    z-index: 30;
 }
 
 .parent {
@@ -347,11 +498,13 @@ h2{
     gap: 15px;
     height: 300px;
     margin-top: 40px;
+    z-index: 40;
 }
     
 
 .parent div img{
-    width: 100px; 
+    width: 100px;
+    z-index: 30; 
 }
 
 /*Proyectos Personales*/
@@ -361,6 +514,7 @@ h2{
     text-align: center;
     align-items: center;
     margin-top: 50px;
+    max-width: 2400px;
     
 }
 
@@ -375,6 +529,7 @@ h2{
 .parent2 div{
     background-color: white;
     z-index: 10;
+    border-radius: 10px;
 }
 
 
@@ -383,23 +538,61 @@ h2{
     justify-content: space-around;
 }
 .parent2 div ul li{
-    margin-top: 10px;
+    margin-top: 5px;
     list-style: none;  
+    border-radius: 40px;
+    padding: 5px;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.parent2 .html{
+    background-color: #E34F26;
+    color: white;
 }
 
+.parent2 .css{
+    background-color: #1572B6;
+    color: white;
+}
+
+.parent2 .js{
+    background-color: #F7DF1E;
+}
+
+.parent2 .java{
+    background-color: #5382A1;
+    color: white;
+}
+
+.parent2 .ms{
+    background-color: #4479A1;
+    color: white;
+}
+
+.parent2 .nj{
+    background-color: #8CC84B;
+}
+
+.parent2 .ss{
+    background-color: #C8102E;
+    color: white;
+}
 .parent2 .proyectos_img{
    width: 100%;
    height: 300px;
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover;
+   border:2px solid white
 }
+
+
     
 footer{
     width: 100%;
     height: 160px;
     background-color: #ffffff ;
-    margin-top: 20px;
+    margin-top: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
