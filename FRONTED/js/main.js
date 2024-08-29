@@ -19,6 +19,7 @@ const modal = document.querySelector('.dialog');
 const abrirModal = document.querySelector('#abrirContacto');
 const cerrarModal = document.querySelector('#cerrar');
 const overlay = document.getElementById('modalOverlay');
+const contactoModal = document.querySelector('.contacto-abrir-modal')
 
 function openModal() {
     modal.style.display = 'block';
@@ -33,3 +34,4 @@ function closeModal() {
 
 abrirModal.addEventListener('click', openModal)
 cerrarModal.addEventListener('click',closeModal)
+contactoModal.addEventListener('click',openModal)
