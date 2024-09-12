@@ -415,12 +415,16 @@ h2{
     padding: 20px;
     margin: auto;
     max-width: 2400px;
+    z-index: 200;
 }
 
 .experiencia-content {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
     gap: 8px;
-    
+    z-index: 200;
 }
 
 .experiencia-content h2 {
@@ -434,19 +438,21 @@ h2{
     padding: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
-    height: 700px;
     color: black;
     overflow: hidden;
     border-radius: 10px;
-    
+    z-index: 200;
 }
 
 .experiencia-content .div1,
 .experiencia-content .div2,
 .experiencia-content .div3 {
     flex: 1;
-    min-width: 200px; /* Ajusta el tamaño mínimo según tu diseño */
+    flex-grow: 4;
+    min-width: 350px; /* Ajusta el tamaño mínimo según tu diseño */
+    flex-wrap: wrap;
 }
+
 
 .experiencia-content .div3 h2{
     color: #00abf0;
@@ -454,6 +460,7 @@ h2{
 .experiencia-content .div3 p{
     text-wrap: balance;
     text-align: left;
+    font-size: 15px;
 }
 
 
@@ -464,7 +471,13 @@ h2{
 
 .experiencia-content img{
     width: 60%;
-    max-width: 380px;
+    max-width: 400px;
+}
+
+.experiencia-content:last-child img{
+    width: 60%;
+    max-width: 600px;
+    min-width: 300px;
 }
 
 
@@ -534,6 +547,7 @@ h2{
     grid-template-rows: repeat(3, 1fr);
     gap: 15px; 
     color: black;
+    min-width: 600px;
 }
 
 .parent2 div{
@@ -588,6 +602,14 @@ h2{
 
 .parent2 .ss{
     background-color: #C8102E;
+    color: white;
+}
+.parent2 .py{
+    background-color: #306998;
+    color: white;
+}
+.parent2 .mg{
+    background-color: #0ba558;
     color: white;
 }
 .parent2 .proyectos_img{
