@@ -495,12 +495,9 @@ h2{
 }
 
 
-
-        
-
 /*SKILLS*/
 
-.skills{
+.skills {
     width: 80%;
     margin: auto;
     text-align: center;
@@ -510,11 +507,11 @@ h2{
 
 .parent {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); /* Ajusta dinámicamente las columnas */
     gap: 15px;
-    height: 300px;
+    height: auto;
     margin-top: 40px;
+    justify-content: center; /* Centra las columnas en la fila */
 }
 
 
@@ -547,8 +544,39 @@ h2{
     grid-template-rows: repeat(3, 1fr);
     gap: 15px; 
     color: black;
-    min-width: 600px;
 }
+
+.proyectos-personales-tittle{
+    position: sticky;
+    top: 0;
+    background-color: #081b29;
+    padding-top: 5px;
+    overflow: hidden;
+    z-index: 50;
+}
+
+
+@media (max-width: 1280px) {
+   .parent2{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-auto-flow: 1fr;
+   }
+   .proyectos-personales-tittle{
+    position: relative;
+}
+}
+
+@media (max-width: 880px) {
+    .parent2{
+     grid-template-columns: 1fr;
+     grid-auto-flow: 1fr;
+    }
+
+    .proyectos-personales-tittle{
+        position: relative;
+    }
+ }
 
 .parent2 div{
     background-color: white;
@@ -705,11 +733,3 @@ footer a:hover{
     cursor: pointer;
 }
 
-.proyectos-personales-tittle{
-    position: sticky;
-    top: 0;
-    background-color: #081b29;
-    padding-top: 5px;
-    overflow: hidden;
-    z-index: 50;
-}
