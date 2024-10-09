@@ -206,6 +206,7 @@ body{
     overflow: hidden;
     animation: aparecer 2s -0.3s both;
     margin: auto;
+    max-width: 2670px;
   }
 
 .home-content{
@@ -228,16 +229,29 @@ body{
     background-position: left;
 }
 
-.home-content h1{
+.home-content h1 {
     font-size: 51px;
     font-weight: 700;
     line-height: 1.2;
+    width: 22ch;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid #00abf0;
+    animation: typing 4s steps(31), blink .5s step-end infinite alternate;
+    margin: auto;
 }
+
 
 .home-content h3{
     font-size: 32px;
     font-weight: 700;
-    color: #00abf0
+    color: #00abf0;
+    width: 42ch;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 4s steps(48), blink .5s step-end infinite alternate;
+    margin: auto;
+    border-right: 3px solid #ffffff;
 }
 
 .home-content p{
@@ -365,15 +379,12 @@ body{
     position: absolute;
     bottom: 40px;
     width: 220px;
+
     display: flex; 
     justify-content: space-between;   
 }
 
-@media (min-width: 2400px) {
-    .home-sci{
-        left: 16%;
-    }
-}
+
 
 
 .home-sci a{
@@ -417,20 +428,22 @@ h2{
     text-align: center;
 }
 
+
+
 /*EXPERIENCIA*/
 
 .experiencia {
     width: 80%;
     padding: 20px;
     margin: auto;
-    max-width: 2400px;
+    max-width: 2100px;
     z-index: 200;
 }
 
 .experiencia h2{
     animation: aparecer both;
-    animation-timeline: view(); /*al verse los elementos comenzara la animacion*/
-    animation-range: cover 10% cover 80%; /*como comienza y como termina*/
+    animation-timeline: view(); 
+    animation-range: cover 10% cover 80%; 
 }
 
 
@@ -465,11 +478,12 @@ h2{
 .experiencia-content .div3 {
     flex: 1;
     flex-grow: 4;
-    min-width: 350px; /* Ajusta el tamaño mínimo según tu diseño */
+    min-width: 350px; 
     flex-wrap: wrap;
     animation: aparecer both;
-    animation-timeline: view(); /*al verse los elementos comenzara la animacion*/
-    animation-range: cover 10% cover 60%; /*como comienza y como termina*/
+    animation-timeline: view(); 
+    animation-range: cover 10% cover 60%;
+    font-size: 15px;
 }
 
 
@@ -480,7 +494,6 @@ h2{
 .experiencia-content .div3 p{
     text-wrap: balance;
     text-align: left;
-    font-size: 15px;
 }
 
 
@@ -519,7 +532,7 @@ h2{
 
 .skills {
     width: 80%;
-    max-width: 2400px;
+    max-width: 2100px;
     margin: auto;
     text-align: center;
     align-items: center;
@@ -528,22 +541,22 @@ h2{
 
 .parent {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); /* Ajusta dinámicamente las columnas */
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); 
     gap: 15px;
     height: auto;
     margin-top: 40px;
-    justify-content: center; /* Centra las columnas en la fila */
+    justify-content: center; 
 }
 
 .skills h2{
     animation: aparecer both;
-    animation-timeline: view(); /*al verse los elementos comenzara la animacion*/
-    animation-range: cover 30% cover 60%; /*como comienza y como termina*/
+    animation-timeline: view(); 
+    animation-range: cover 30% cover 60%; 
 }
 .parent div{
     animation: aparecer both;
-    animation-timeline: view(); /*al verse los elementos comenzara la animacion*/
-    animation-range: cover 30% cover 60%; /*como comienza y como termina*/
+    animation-timeline: view(); 
+    animation-range: cover 30% cover 60%; 
 }
 
 .parent div img{
@@ -564,7 +577,7 @@ h2{
     text-align: center;
     align-items: center;
     margin-top: 50px;
-    max-width: 2400px;
+    max-width: 2100px;
     z-index: 20;
 }
 
@@ -574,6 +587,7 @@ h2{
     grid-template-rows: repeat(3, 1fr);
     gap: 15px; 
     color: black;
+    line-height: 1.8;
 }
 
 .proyectos-personales-tittle{
@@ -584,43 +598,23 @@ h2{
     overflow: hidden;
     z-index: 50;
     animation: aparecer both;
-    animation-timeline: view(); /*al verse los elementos comenzara la animacion*/
-    animation-range: cover 10% cover 60%; /*como comienza y como termina*/
+    animation-timeline: view(); 
+    animation-range: cover 10% cover 60%; 
 }
 
-
-@media (max-width: 1280px) {
-   .parent2{
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3,1fr);
-    grid-auto-flow: 1fr;
-   }
-   .proyectos-personales-tittle{
-    position: relative;
-}
-}
-
-@media (max-width: 880px) {
-    .parent2{
-     grid-template-columns: 1fr;
-     grid-auto-flow: 1fr;
-    }
-
-    .proyectos-personales-tittle{
-        position: relative;
-    }
- }
 
 .parent2 div{
     background-color: white;
     border-radius: 10px;
     overflow: hidden;
     z-index: 30;
-    animation: aparecer both;
-    animation-timeline: view(); /*al verse los elementos comenzara la animacion*/
-    animation-range: cover 20% cover 60%; /*como comienza y como termina*/
 }
 
+.proyectos_parent{
+    animation: aparecer both;
+    animation-timeline: view(); 
+    animation-range: cover 20% cover 60%; 
+}
 
 
 .parent2 div ul{
@@ -755,8 +749,8 @@ footer{
     justify-content: center;
     flex-direction: column;
     animation: aparecer both;
-    animation-timeline: view(); /*al verse los elementos comenzara la animacion*/
-    animation-range: cover 0% cover 25%; /*como comienza y como termina*/
+    animation-timeline: view(); 
+    animation-range: cover 0% cover 25%; 
 }
 
     
@@ -807,3 +801,285 @@ footer a:hover{
         color: #00abf0;
     }   
 }
+
+
+ /* Nueva animación para móviles */
+ @keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+    
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+
+/*Media query*/
+@media (max-width: 1280px) {
+    .parent2{
+     grid-template-columns: repeat(2, 1fr);
+     grid-template-rows: repeat(3,1fr);
+     grid-auto-flow: 1fr;
+    }
+    .proyectos-personales-tittle{
+     position: relative;
+    }
+    .home p{
+        width: 80%;;
+    }
+
+    .home h3{
+        font-size: 26px;
+    }
+ }
+@media (max-width: 890px) {
+    .parent2{
+     grid-template-columns: 1fr;
+     grid-auto-flow: 1fr;
+    }
+
+    .proyectos-personales-tittle{
+        position: relative;
+    }
+    .home h1{
+       font-size: 35px;
+   }
+
+   .home h3{
+       font-size: 24px;
+   }
+ }
+ 
+/* Media query para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    .home-content .img{
+        height: auto;
+        overflow: hidden;
+        z-index: 20;
+        margin-bottom: 20px;
+     }
+    .home-content img{
+        max-width: 80%;
+        min-width: 300px;
+        max-height: 500px;
+        object-fit: cover;
+        object-position: center;
+    }
+    
+    .home-content h1 {
+        font-size: 28px; 
+        width: 100%; 
+        white-space: normal; 
+        border-right: none; 
+        animation: fade-in 2s ease-out; 
+        line-height: 2;
+    }
+
+    .home-content h3 {
+        font-size: 24px; 
+        width: 100%; 
+        white-space: normal; /* Permitir el salto de línea */
+        border-right: none; 
+        animation: fade-in 2s ease-out; 
+    }
+
+    .home-content p {
+        font-size: 16px; 
+        width: 100%;
+        white-space: normal; /* Permitir el salto de línea */
+        animation: fade-in 2s ease-out; 
+    }
+    
+    .header{
+        flex-direction: column;
+        z-index: 1100;
+        animation: none;
+        animation-timeline: none;
+        position: fixed;
+        top: 0px;
+        padding-top: 10px;
+        background-color: #081b29;
+        animation-range: none;
+    }
+
+    .home{
+        position: relative;
+        height: calc(100dvh - 73px);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        overflow-y: auto;
+    }
+    .home-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .home img{
+        height: 200px;
+        background-size: auto;
+        background-position: left;
+    }
+
+    .next-page{
+        display: none;
+    }
+
+
+    .home-content .btn-box a{
+        font-size: 15px;
+    }
+
+    .home-content .btn-box{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+        width: 100%;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        height: 40px;
+    }
+    .btn-box a{
+        font-weight: 600;
+        letter-spacing: 1px;
+        z-index: 1;
+        overflow: visible;
+        transition: .5s;
+    }
+    
+
+    .home-sci{
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 20px;  
+    }
+    
+    .home-sci a{
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h2{
+        font-size: 24px;
+    }
+
+    p{
+        font-size: 14px;
+    }
+
+    .experiencia-content .div3 p{
+        font-size: 14px;
+    }
+
+    ul li{
+        font-size: 14px;
+    }
+
+    .parent2 div ul{
+        flex-wrap: wrap;
+        gap: 5px;
+        
+    }
+    
+    footer{
+        height: 150px;
+    }
+
+    footer a{
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+    .home{
+        height: calc(100dvh);
+    }
+}
+
+/* Ajuste adicional para pantallas muy pequeñas */
+@media screen and (max-width: 450px) {
+    .home-content .img{
+        height: 150px;
+    }
+  
+    .home-content h1 {
+        font-size: 20px; 
+    }
+    .home-content h3 {
+        font-size: 18px; 
+    }
+    .home-content p {
+        font-size: 13px; 
+    }
+    .header{
+        flex-direction: column;
+    }
+
+    .navbar a{
+        font-size: 15px;
+    }
+
+    .home-content .btn-box{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+        width: 100%;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+    .btn-box a{
+        font-weight: 500;
+        letter-spacing: 1px;
+        z-index: 1;
+        overflow: visible;
+        transition: .5s;
+        font-size: 12px;
+    }
+    
+
+    .home-sci{
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        bottom: 50px;  
+    }
+    
+    .home-sci a{
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+   
+    .parent div{
+        animation: aparecer both;
+        animation-timeline: view(); 
+        animation-range: cover 10% cover 80%; 
+    }
+   
+   
+}
+
