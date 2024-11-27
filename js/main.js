@@ -18,20 +18,19 @@ setInterval(triggerAnimation, 10000);
 const modal = document.querySelector('.dialog');
 const abrirModal = document.querySelector('#abrirContacto');
 const cerrarModal = document.querySelector('#cerrar');
-const overlay = document.getElementById('modalOverlay');
-const contactoModal = document.querySelector('.contacto-abrir-modal')
+const contactoModal = document.querySelector('.contacto-abrir-modal');
 
+// Función para abrir el modal
 function openModal() {
-    modal.style.display = 'block';
-    overlay.style.display = 'block';
+    modal.style.display = 'flex'; // Cambiar a 'flex' para centrar contenido con CSS
 }
 
 // Función para cerrar el modal
 function closeModal() {
     modal.style.display = 'none';
-    overlay.style.display = 'none';
 }
 
-abrirModal.addEventListener('click', openModal)
-cerrarModal.addEventListener('click',closeModal)
-contactoModal.addEventListener('click',openModal)
+// Eventos para abrir y cerrar el modal
+abrirModal.addEventListener('click', openModal);
+contactoModal.addEventListener('click', openModal);
+cerrarModal.addEventListener('click', closeModal);
