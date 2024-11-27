@@ -89,7 +89,7 @@ function recorrerMensajes() {
       } else {
         index = 0; // Si llegamos al final, reiniciamos el índice a 0
       }
-    }, 5000); // 5000ms = 5 segundos
+    }, 7000); // 5000ms = 5 segundos
   }
   
   // Llamar a la función para que los mensajes se muestren
