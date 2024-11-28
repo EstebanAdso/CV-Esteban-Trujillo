@@ -1052,10 +1052,115 @@ footer a:hover{
 
 }
 
+@media screen and (max-width: 1024px) and (max-height: 600px) {
+    .home-content .img{
+        height: auto;
+        overflow: hidden;
+        z-index: 20;
+     }
+     
+     .home-content img{
+         max-width: 40%;
+         min-width: 300px;
+         max-height: 400px;
+         border-top-left-radius: 30px;
+         border-bottom-right-radius: 30px;
+         background-position: left;
+     }
+     
+     .home-content h1 {
+         font-size: 1.6em;
+     }
+     
+     
+     .home-content h3{
+         font-size: 1.2em;
+     }
+     
+     #mensajesHome {
+         height: 3em; 
+         width: 100%;
+         text-align: center;
+         font-size: 0.9em;
+     }
+     
+     
+     .home-content .btn-box{
+         gap: 20px;
+         width: 330px;
+         height: auto;
+         margin: auto;
+     }
+     
+       .next-page{
+         font-size: 3em;
+         margin-top: 10px;
+       }
+}
+
+
+@media (max-width: 860px) {
+    
+    .home-content .img{
+       height: auto;
+       overflow: hidden;
+       z-index: 20;
+    }
+    
+    .home-content img{
+        max-width: 40%;
+        min-width: 300px;
+        max-height: 400px;
+        border-top-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        background-position: left;
+    }
+    
+    .home-content h1 {
+        font-size: 2.4em;
+    }
+    
+    
+    .home-content h3{
+        font-size: 1.6em;
+    }
+    
+    #mensajesHome {
+        height: 8em; 
+        width: 100%;
+        text-align: center;
+    }
+    
+    
+    .home-content .btn-box{
+        gap: 20px;
+    }
+    
+      .next-page{
+        font-size: 5em;
+        margin-top: 10px;
+      }
+    
+ }
+
 
 @media screen and (max-width: 550px) {
     .home{
         height: calc(100dvh);
+    }
+
+    .home-content h1{
+        font-size: 1.5em;
+    }
+
+    .home-content h3{
+        font-size: 1.3em;
+    }
+
+    #mensajesHome {
+        font-size: 0.9em;
+        height: 8em; 
+        width: 100%;
     }
 }
 
@@ -1066,14 +1171,16 @@ footer a:hover{
     }
   
     .home-content h1 {
-        font-size: 1.5em; 
+        font-size: 1.4em; 
     }
     .home-content h3 {
         font-size: 1.2em; 
+        margin-bottom: 0;
+        padding-bottom: 0;
     }
     #mensajesHome {
-        font-size: 0.9em;
-        height: 12em; 
+        font-size: 0.8em;
+        height: 8em; 
         width: 100%;
         text-align: center;
     }
@@ -1092,8 +1199,8 @@ footer a:hover{
         align-items: center;
         gap: 15px;
         width: 100%;
-        margin-bottom: 20px;
-        margin-top: 10px;
+        margin-bottom: 0px;
+        margin-top: 0px;
     }
     .btn-box a{
         font-weight: 500;
@@ -1109,7 +1216,7 @@ footer a:hover{
         display: flex;
         justify-content: center;
         gap: 15px;
-        bottom: 50px;  
+        bottom: 105px;  
     }
     
     .home-sci a{
@@ -1139,6 +1246,8 @@ footer a:hover{
     }
     .home-content h3 {
         font-size: 1.1em; 
+        margin-bottom: 0;
+        padding-bottom: 0;
     }
     #mensajesHome {
         font-size: 0.8em;
@@ -1169,7 +1278,7 @@ footer a:hover{
         display: flex;
         justify-content: center;
         gap: 15px;
-        bottom: 50px;  
+        bottom: 65px;  
     }
     
     .home-sci a{
