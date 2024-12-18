@@ -630,7 +630,12 @@ h2{
 }
 
 .parent2 .css{
-    background-color: #1572B6;
+    background-color: rebeccapurple;
+    color: white;
+}
+
+.parent2 .bootstrap{
+    background-color: blueviolet;
     color: white;
 }
 
