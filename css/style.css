@@ -575,6 +575,10 @@ h2{
     z-index: 20;
 }
 
+.proyectos_parent h3{
+    padding: 5px 20px;
+}
+
 .parent2 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -614,6 +618,8 @@ h2{
 .parent2 div ul{
     display: flex;
     justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 5px;
 }
 .parent2 div ul li{
     margin-top: 5px;
@@ -633,9 +639,23 @@ h2{
     background-color: rebeccapurple;
     color: white;
 }
+.parent2 .springboot {
+    background-color: #6DB33F;
+    color: white;
+}
 
 .parent2 .bootstrap{
     background-color: blueviolet;
+    color: white;
+}
+
+.parent2 .express {
+    background-color: #000000;
+    color: white;
+}
+
+.parent2 .pug {
+    background-color: #a86454;
     color: white;
 }
 
