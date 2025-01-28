@@ -679,10 +679,9 @@ h2{
 .parent2 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
     gap: 15px; 
     color: black;
-    line-height: 1.8;
+    line-height: 1.6;
 }
 
 .proyectos-personales-tittle{
@@ -715,8 +714,8 @@ h2{
 .parent2 div ul{
     display: flex;
     justify-content: space-around;
-        flex-wrap: wrap;
-        gap: 5px;
+    flex-wrap: wrap;
+    gap: 5px;
 }
 .parent2 div ul li{
     margin-top: 5px;
