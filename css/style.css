@@ -952,7 +952,6 @@ footer a:hover{
 @media (max-width: 1280px) {
     .parent2{
      grid-template-columns: repeat(2, 1fr);
-     grid-template-rows: repeat(3,1fr);
      grid-auto-flow: 1fr;
     }
     .proyectos-personales-tittle{
@@ -969,7 +968,6 @@ footer a:hover{
 @media (max-width: 890px) {
     .parent2{
      grid-template-columns: 1fr;
-     grid-auto-flow: 1fr;
     }
 
     .proyectos-personales-tittle{
