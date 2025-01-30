@@ -488,13 +488,14 @@ h2{
 
 .experiencia-content img{
     width: 60%;
-    max-width: 400px;
+    max-width: 300px;
+    min-width: 200px;
 }
 
 .experiencia-content:last-child img{
     width: 60%;
-    max-width: 600px;
-    min-width: 300px;
+    max-width: 300px;
+    min-width: 200px;
 }
 
 
@@ -642,12 +643,12 @@ h2{
 .skills h2{
     animation: aparecer both;
     animation-timeline: view(); 
-    animation-range: cover 30% cover 60%; 
+    animation-range: cover 20% cover 40%; 
 }
 .parent div{
     animation: aparecer both;
     animation-timeline: view(); 
-    animation-range: cover 30% cover 60%; 
+    animation-range: cover 20% cover 40%; 
 }
 
 .parent div img{
@@ -718,6 +719,10 @@ h2{
     border:2px solid white
  }
 
+.proyectos_parent_content p{
+    text-align: left;
+    padding: 0px 15px;
+}
 
 
 .parent2 div ul{
@@ -749,6 +754,10 @@ h2{
     color: white;
 }
 
+.parent2 .react {
+    background-color: #61dafb;
+    color: black;
+}
 .parent2 .bootstrap{
     background-color: blueviolet;
     color: white;
