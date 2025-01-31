@@ -754,6 +754,11 @@ h2{
     color: white;
 }
 
+.parent2 .vue {
+    background-color: #42b883;
+    color: white;
+}
+
 .parent2 .react {
     background-color: #61dafb;
     color: black;
