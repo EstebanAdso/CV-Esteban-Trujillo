@@ -438,6 +438,7 @@ h2{
     animation: aparecer both;
     animation-timeline: view(); 
     animation-range: cover 10% cover 80%; 
+    margin-bottom: 20px;
 }
 
 
@@ -469,10 +470,10 @@ h2{
 
 .experiencia-content .div1,
 .experiencia-content .div2,
-.experiencia-content .div3 {
+#about .div1 {
     flex: 1;
     flex-grow: 4;
-    min-width: 350px; 
+    min-width: 380px; 
     flex-wrap: wrap;
     animation: aparecer both;
     animation-timeline: view(); 
@@ -506,11 +507,46 @@ h2{
     .experiencia-content {
         flex-direction: column;
         align-items: center;
+        padding: 20px;
     }
     .experiencia-content > div {
         width: 100%;
     }
 }
+
+@media (max-width: 440px) {
+    .experiencia-content .div1,
+    .experiencia-content .div2,
+    #about .div1 {
+        min-width: 380px; 
+    }
+}
+
+@media (max-width: 395px) {
+    .experiencia-content .div1,
+    .experiencia-content .div2,
+    #about .div1 {
+        min-width: 370px; 
+    }
+}
+
+
+@media (max-width: 380px) {
+    .experiencia-content .div1,
+    .experiencia-content .div2,
+    #about .div1  {
+        min-width: 350px; 
+    }
+}
+
+@media (max-width: 344px) {
+    .experiencia-content .div1,
+    .experiencia-content .div2,
+    #about .div1  {
+        min-width: 320px; 
+    }
+}
+
 
 /* ABOUT */
 .about {
@@ -525,6 +561,7 @@ h2{
     animation: aparecer both;
     animation-timeline: view(); 
     animation-range: cover 10% cover 80%; 
+    margin-bottom: 20px;
 }
 
 
@@ -688,13 +725,14 @@ h2{
 .proyectos-personales-tittle{
     position: sticky;
     top: 0;
-    background-color: #081b29;
     padding-top: 5px;
     overflow: hidden;
     z-index: 50;
     animation: aparecer both;
     animation-timeline: view(); 
-    animation-range: cover 10% cover 60%; 
+    animation-range: cover 10% cover 20%; 
+    margin-bottom: 20px;
+    color: #fff;
 }
 
 
@@ -870,7 +908,12 @@ h2{
     width: 100%;
 }
 
-
+@media (max-width: 450px) {
+    .proyectos{
+        width: 92%;
+    }
+    
+}
 
     
 footer{
@@ -1113,7 +1156,7 @@ footer a:hover{
     }
 
     h2{
-        font-size: 24px;
+        font-size: clamp(1.8em, 5vw, 2.5em);
     }
 
     p{
