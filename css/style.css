@@ -419,7 +419,7 @@ body{
     width: 100%;
 }
 h2{
-    font-size: 2.5em;
+    font-size: clamp(1.8em, 5vw, 2.5em);
     text-align: center;
 }
 
@@ -438,6 +438,7 @@ h2{
     animation: aparecer both;
     animation-timeline: view(); 
     animation-range: cover 10% cover 80%; 
+    margin-bottom: 20px;
     margin-bottom: 20px;
 }
 
@@ -470,9 +471,11 @@ h2{
 
 .experiencia-content .div1,
 .experiencia-content .div2,
+.experiencia-content .div3 
 #about .div1 {
     flex: 1;
     flex-grow: 4;
+    min-width: 350px; 
     min-width: 380px; 
     flex-wrap: wrap;
     animation: aparecer both;
@@ -733,6 +736,7 @@ h2{
     animation-range: cover 10% cover 20%; 
     margin-bottom: 20px;
     color: #fff;
+    margin-bottom: 20px;
 }
 
 
@@ -1485,3 +1489,9 @@ footer a:hover{
 }
 
 
+@media (max-width: 450px) {
+    .proyectos{
+        width: 92%;
+    }
+    
+}
