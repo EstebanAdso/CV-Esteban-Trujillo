@@ -633,7 +633,7 @@ h2{
 
 .parent {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); 
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); 
     gap: 15px;
     height: auto;
     margin-top: 40px;
@@ -765,6 +765,11 @@ h2{
 }
 .parent2 .bootstrap{
     background-color: blueviolet;
+    color: white;
+}
+
+.parent2 .tailwind {
+    background-color: #38b2ac;
     color: white;
 }
 
