@@ -796,6 +796,11 @@ h2{
     color: white;
 }
 
+.parent2 .typescript {
+    background-color: #3178c6;
+    color: white;
+}
+
 .parent2 .vue {
     background-color: #42b883;
     color: white;
